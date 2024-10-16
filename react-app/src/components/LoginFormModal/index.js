@@ -93,12 +93,12 @@ function LoginFormModal() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
+               required
             />
           </div>
         <button className='login-submit-button' type="submit">Sign In</button>
         <div className='or-text'>or</div>
-        <button className="demo-user-button" onClick={demoUser}>Log in as Demo User</button>
+
       </form>
       </div>
     </>

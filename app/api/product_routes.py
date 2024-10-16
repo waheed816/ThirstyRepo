@@ -71,9 +71,7 @@ def post_new_product():
             updated_at = date.today()
         )
     # print('newProduct->', new_product)
-        db.session.add(new_product)
-        db.session.commit()
-        return new_product.to_dict()
+          
     return form.errors
 
 
@@ -119,7 +117,7 @@ def edit_product(productId):
     print("DATAAAAAAAAAAAA", data)
     # form['csrf_token'].data = request.cookies["csrf_token"]
 
-    # image = data['preview_img']
+    # im  age = data['preview_img']
     # image.filename = get_unique_filename(image.filename)
     # upload = upload_file_to_s3(image)
 
